@@ -4,7 +4,7 @@ import {StyleSheet, Text, View} from 'react-native';
 function App(): React.JSX.Element {
   return (
     <View>
-      <Text>Hello MARK BELLO!</Text>
+      <Text>HELLO MARKBELLO!</Text>
     </View>
   );
 }
@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
   sectionDescription: {
     marginTop: 8,
     fontSize: 18,
-    fontWeight: '400',
+    fontWeight: '400',s
   },
   highlight: {
     fontWeight: '700',
