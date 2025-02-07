@@ -1,0 +1,32 @@
+1. git config --global user.email "you@example.com"
+    -> git config --global 'user.email "markbello10041999@gmaiil.com"
+2. git config --global user.name "Your Name"
+    ->git config --global 'user.name "m4rkbello"
+
+3. git init 
+4. git add . 
+5. git commit -m "Your commit message" 
+6. $ git branch -M m4rkbello 
+7. git remote add origin git@github.com:m4rkbello/POMODORO_REACT_NATIVE.git
+8. git push -u origin m4rkbello 
+9. git branch
+10. git checkout -b m4rkbello 
+
+SETUP REACT NATIVE 
+1. INSTALL ANDROID STUDIO 
+2. INSTALL CHOCOLATEY 
+    -> https://chocolatey.org/install 
+    -> https://chocolatey.org/install#individual 
+3. GO TO POWER SHELL AND RUN AS ADMINISTRATOR 
+    -> then PS C:\WINDOWS\system32> Get-ExecutionPolicy 
+    or 
+      -> then PS C:\WINDOWS\system32> Set-ExecutionPolicy AllSigned 
+
+4. PS C:\WINDOWS\system32> Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+5. RUN THIS choco install -y nodejs-lts microsoft-openjdk17 on the 
+    ->PS C:\WINDOWS\system32>choco install -y nodejs-lts microsoft-openjdk17
+
+GET STARTED WITHOUT A FRAMEWORK 
+https://reactnative.dev/docs/getting-started-without-a-framework 
+->npm uninstall -g react-native-cli @react-native-community/cli 
+->npx @react-native-community/cli@latest init AwesomeProject

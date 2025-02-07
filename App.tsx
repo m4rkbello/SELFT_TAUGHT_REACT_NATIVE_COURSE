@@ -3,29 +3,61 @@ import {StyleSheet, Text, View} from 'react-native';
 
 function App(): React.JSX.Element {
   return (
-    <View>
-      <Text>HELLO MARKBELLO!</Text>
+    <View style={styles.container}>
+      <View style={styles.boxContainer}>
+        <View style={styles.redBox} />
+        <View style={styles.blueBox} />
+        <View style={styles.greenBox} />
+
+ 
+      </View>
+      <Text style={styles.myFirstText}>
+          MY FIRST REACT NATIVE COURSE
+          
+        </Text>
+        <Text style={styles.textNested}>
+          PADAYON LANG <Text style={styles.textBold}>MARK BELO</Text>
+        </Text>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
+  container: {
+    marginBottom: 20,
   },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
+  boxContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
   },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',s
+  redBox: {
+    width: 50,
+    height: 50,
+    backgroundColor: 'red',
+
   },
-  highlight: {
-    fontWeight: '700',
+  blueBox: {
+    width: 50,
+    height: 50,
+    backgroundColor: 'blue',
+
   },
+  greenBox: {
+    width: 50,
+    height: 50,
+    backgroundColor: 'green',
+
+  },
+  myFirstText:{
+    fontSize: 30,
+  },
+  textNested :{
+    fontSize: 20,
+  },
+  textBold: {
+    fontWeight: 'bold',
+  },
+
 });
 
 export default App;
